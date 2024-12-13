@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trend Blogger</title>
+    <!--box-icon-->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <Link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+  <header>
+   <div class="nav container">
+     <a href="#" class="logo">code <span>myhobby</span></a>
+     <a href="#" class="login">Sing up</a>
+   </div>
+  </header>
+  <section class="home" id="home">
+     <div class="home-text container">
+         <h2 class="home-title">Trend Blogger</h2>
+         <span class="home-subtitle">your sourse of great content</span>
+     </div>
+  </section>
+  
+<section class="about container" id="about">
+ <div class="contentBx">
+    <h2 class="titletext">catch up with the trending topics</h2>
+    <p class="title-text">
+      Welcome to Health Haven, your ultimate destination for all things health and wellness. Our mission is to empower you with expert tips, science-backed insights, and practical advice on how to lead a healthier, more vibrant life. Whether you're looking to improve your diet, boost your mental well-being, or discover the latest trends in fitness and self-care, Health Haven is here to guide you every step of the way. Dive into our carefully curated content and take control of your health journey today!
+   <br> At Health Haven, we believe that good health is the foundation of a happy and fulfilling life. Our platform is dedicated to providing you with trusted information and actionable tips to support your physical, mental, and emotional well-being. From nutrition and exercise to holistic wellness and mental health, we cover a wide range of topics to help you make informed choices. Whether you're starting your health journey or looking to enhance your existing routine, Health Haven is here to inspire and guide you toward a healthier, happier you.
+    </p>
+    <a href="#" class="btn2">Read more</a>
+ </div>
+ <div class="imgBx">
+
+  <img src="DALL·E 2024-10-09 23.19.43 - A professional-looking image of a lady related to the health niche. The lady should be wearing casual yet neat attire, smiling gently, and holding a b.webp" alt="" class="fitBg">
+
+ </div>
+</section>
+<section class="about-us">
+  <h1>About Us</h1>
+  <!-- Replace 'your-image-path.jpg' with the actual image URL -->
+  <img src="DALL·E 2024-12-13 22.13.08 - A clean and modern health-related image, featuring vibrant green colors and elements symbolizing wellness. Include a heart shape made of fresh vegetab.webp" alt="Health Haven Logo">
+  <p>Welcome to <span class="highlight">Health Haven</span>, your trusted partner in living a healthier and more vibrant life. Our mission is to provide you with reliable information and expert advice on nutrition, fitness, mental well-being, and overall health. We believe that everyone deserves to live a life full of energy, confidence, and vitality.</p>
+  <p>At Health Haven, we aim to be your go-to source for health tips, delicious recipes, and life-changing wellness strategies. Whether you're looking to improve your diet, find motivation to exercise, or learn about natural remedies, we're here to guide you on your journey to optimal health.</p>
+</section>
+      
+    <section class="payment-section">
+      <h1>Choose Your Plan</h1>
+      <div class="payment-options">
+          <div class="payment-option" onclick="selectPlan('Basic')">
+              <h3>Basic Plan</h3>
+              <p>$9.99/month</p>
+          </div>
+          <div class="payment-option" onclick="selectPlan('Premium')">
+              <h3>Premium Plan</h3>
+              <p>$19.99/month</p>
+          </div>
+          <div class="payment-option" onclick="selectPlan('Gold')">
+              <h3>Gold Plan</h3>
+              <p>$29.99/month</p>
+          </div>
+      </div>
+      
+      <div id="selected-plan" class="payment-form">
+          <h2 id="plan-title">Select a Plan</h2>
+          <input type="text" id="name" placeholder="Your Name" required>
+          <input type="email" id="email" placeholder="Your Email" required>
+          <input type="text" id="card-number" placeholder="Card Number" required>
+          <input type="text" id="expiry" placeholder="Expiry Date" required>
+          <input type="text" id="cvv" placeholder="CVV" required>
+          <button onclick="processPayment()">Pay Now</button>
+      </div>
+      
+      <div id="success-message" class="success-message">
+          Payment Successful! Thank you for subscribing.
+      </div>
+  </section>  
+
+
+  <section class="faq-section">
+    <h1>Frequently Asked Questions</h1>
+    <div class="faq-container">
+        <div class="faq-item" onclick="toggleAnswer(1)">
+            <h3>What is Health Haven?</h3>
+        </div>
+        <div id="faq-answer-1" class="faq-content">
+            <p>Health Haven is your go-to platform for health advice, tips, and wellness strategies. We provide resources to help you lead a healthy and vibrant life.</p>
+        </div>
+
+        <div class="faq-item" onclick="toggleAnswer(2)">
+            <h3>How can I improve my diet?</h3>
+        </div>
+        <div id="faq-answer-2" class="faq-content">
+            <p>Improving your diet starts with incorporating more whole foods like fruits, vegetables, lean proteins, and whole grains. Stay hydrated and limit processed foods.</p>
+        </div>
+
+        <div class="faq-item" onclick="toggleAnswer(3)">
+            <h3>Is exercise necessary for health?</h3>
+        </div>
+        <div id="faq-answer-3" class="faq-content">
+            <p>Yes! Regular exercise improves cardiovascular health, boosts mood, and supports weight management. Aim for at least 150 minutes of moderate activity each week.</p>
+        </div>
+
+        <div class="faq-item" onclick="toggleAnswer(4)">
+            <h3>Can I access health resources on mobile?</h3>
+        </div>
+        <div id="faq-answer-4" class="faq-content">
+            <p>Absolutely! Health Haven is mobile-friendly, so you can access articles, tips, and resources on any device, whether you’re at home or on the go.</p>
+        </div>
+    </div>
+</section>
+<section class="copyright-section">
+  <footer>
+      <p>&copy; 2024 Health Haven. All rights reserved.</p>
+      <p>Designed with <span class="heart">&hearts;</span> for your health and wellness.</p>
+  </footer>
+</section>
+
+
+
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script src="main.js"></script>
+</body>
+</html>
